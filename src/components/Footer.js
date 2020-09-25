@@ -2,19 +2,17 @@ import React from 'react';
 
 function Footer(){
     return(
-        <footer>
-            <div class="container" data-aos="zoom-out">
-                <div class="row">
-                    <div class="col-lg-9 text-center text-lg-left">
-                        <h3 class="cta-title">Test</h3>
-                        
-                    </div>
-                    <div class="col-lg-3 cta-btn-container text-center">
-                        <a class="cta-btn align-middle" href="#">Call To Action</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>University of Cebu Lapu-Lapu and Mandaue</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Jam and Pabs</a>
+      </div>
+    </div>
+  </footer>
     )
 }
 export default Footer;
