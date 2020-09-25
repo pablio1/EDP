@@ -8,13 +8,17 @@ function Login(){
         <>
             <Topbar />
             <Header />
-           
-            <section id="hero" className="clearfix">
+            
+            <section id="hero" className="clearfix" >
                 <div className="container d-flex h-100">
                 <div className="row justify-content-center align-self-center" data-aos="fade-up">
-                    <div className="col-md-6 intro-info order-md-first order-last" data-aos="zoom-in" data-aos-delay="100">
+                    <div className="col-md-6 intro-info order-md-first order-last" data-aos="zoom-in" data-aos-delay="180">
 
                         <form className="form-signin ml-5">
+                        <div class="form-label-group">
+                        <h3 class="title">Login to your Account</h3>
+                               <hr></hr>
+                            </div>
                             <div class="form-label-group">
                                 <input type="email" placeholder="Username"  style={{paddingLeft: '20px'}} className="form-control input-padding"  required autofocus />
                             </div>
@@ -28,15 +32,15 @@ function Login(){
                                 <label>Forgot password?</label>
                             </div>
                             <button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-                            <hr className="my-4" />
+                            
                             
                         </form>
 
                     
                     </div>
 
-                    <div className="col-md-6 intro-img order-md-last order-first" data-aos="zoom-out" data-aos-delay="200">
-                        <img src="assets/img/intro-img.png" alt="" className="img-fluid" />
+                    <div className="col-md-6 intro-img order-md-last order-first" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="assets/img/intro-img.png" alt="" className="img-fluid" class="img-fluid animated"/>
                     </div>
                 </div>
 
@@ -86,7 +90,33 @@ function Login(){
 
                 </div>
             </section>
+            <section id="about" class="contact section-bg"> 
+            <div class="container">
+            <div class="section-title">
+          <h1>About</h1>
+          <section id="aboutus" class="team">
+          <div class="container">
+          <div class="section-title">
+              
+          <h2 className="text-info" ><b>University of Cebu commits itself to:</b></h2>
+          <p>Serve as an active catalyst in providing efficient delivery of educational services;</p><br></br>
+          <p>
+Pursue excellence in instruction, research and community services towards social and economic development as well as environmental sustainability;</p><br></br>
+<p>Acquire, disseminate and utilize appropriate technology to enhance the university’s educational services; and</p><br></br>
+<p>Foster an organizational culture that nurtures employee productivity and engagement.</p>
+        </div>
+          </div>
+          </section>
+          
+          
+        
+        </div>
+
+            </div>
+            </section>      
+            <Footer/>
         </>
+        
     )
 }
 
