@@ -4,12 +4,12 @@ function Footer(){
     return(
         
   <footer id="footer">
-    <div class="container">
-      <div class="copyright">
+    <div className="container">
+      <div className="copyright">
         &copy; Copyright <strong><span>University of Cebu Lapu-Lapu and Mandaue</span></strong>. All Rights Reserved
       </div>
-      <div class="credits">
-        Designed by <a href="#">Jam and Pabs</a>
+      <div className="credits">
+        Designed by <a href={'#designed'}>Jam and Pabs</a>
       </div>
     </div>
   </footer>

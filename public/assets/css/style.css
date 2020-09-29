@@ -1440,6 +1440,9 @@ section {
   #footer .footer-top .social-links a {
     margin-bottom: 25px;
   }
+  #hero .d-flex{
+    margin-top: 0px;
+  }
 }
 
 #footer .footer-top h4 {

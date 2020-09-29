@@ -300,6 +300,11 @@ section {
 @media (max-width: 575px) {
   #hero .hero-img img {
     width: 80%;
+    
+  }
+  #hero .form-label-group h3{
+    font-size: 15px;
+    font-weight: bold;
   }
 }
 
