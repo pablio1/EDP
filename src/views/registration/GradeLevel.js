@@ -35,9 +35,7 @@ export class GradeLevel extends Component{
 
 
     render(){
-        const { step } = this.state;
-        const { name, email, phone, password, facebook, twitter, github } = this.state;
-        const values = { name, email, phone, password, facebook, twitter, github };
+        
 
         if (this.state.gradeLevel === 'college') {
             if(this.state.step === 1){
@@ -46,7 +44,7 @@ export class GradeLevel extends Component{
                         <CollegeSetup 
                             nextStep={this.nextStep}
                             inputChange={this.inputChange}
-                            values={values}
+                            //values={values}
                         />
                     </>
                 )
@@ -58,7 +56,7 @@ export class GradeLevel extends Component{
                             nextStep={this.nextStep}
                             prevStep={this.prevStep}
                             inputChange={this.inputChange}
-                            values={values}
+                            //values={values}
                         />
                     </>
                 )
@@ -70,7 +68,7 @@ export class GradeLevel extends Component{
                             nextStep={this.nextStep}
                             prevStep={this.prevStep}
                             inputChange={this.inputChange}
-                            values={values}
+                            //values={values}
                         />
                     </>
                 )
@@ -82,7 +80,7 @@ export class GradeLevel extends Component{
                             nextStep={this.nextStep}
                             prevStep={this.prevStep}
                             inputChange={this.inputChange}
-                            values={values}
+                            //values={values}
                         />
                     </>
                 )
@@ -94,7 +92,7 @@ export class GradeLevel extends Component{
                             nextStep={this.nextStep}
                             prevStep={this.prevStep}
                             inputChange={this.inputChange}
-                            values={values}
+                            //values={values}
                         />
                     </>
                 )
