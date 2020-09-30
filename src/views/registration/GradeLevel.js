@@ -4,6 +4,7 @@ import LastSchool from './steps/LastSchool';
 import CurrentAddress from './steps/CurrentAddress';
 import PermanentAddress from './steps/PermanentAddress';
 import Contact from './steps/Contact';
+import SeniorHighSetup from './steps/SeniorHighSetup';
 
 export class GradeLevel extends Component{
 
@@ -31,7 +32,10 @@ export class GradeLevel extends Component{
 
     chooseCollege = () => {
         this.setState({gradeLevel: 'college'});
-    };    
+    };  
+    chooseSeniorHigh = () => {
+        this.setState({gradeLevel: 'senior'});
+    };  
 
 
     render(){
@@ -97,20 +101,33 @@ export class GradeLevel extends Component{
                     </>
                 )
             }
-        } else {
+        }
+       else if(this.state.gradeLevel === 'senior'){
+            if(this.state.step === 1){
+                return(
+                    <>
+                        <SeniorHighSetup/>  
+                    </>
+                )
+            }
+            
+        }
+        
+        
+        else {
             return(
             <div className="row">
                 <div id="college" onClick={this.chooseCollege} className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
                     <div className=" box">
                         <div className="icon" style={{background: '#e1eeff'}}><i className="" style={{color: '#2282ff'}}><img src={require("assets/img/college.png")} alt="" style={{height: '65px', width: '65px'}} /></i></div>
-                        <h4 className="title"><a href={'/college'}>College</a></h4>
+                        <h4 className="title"><a href={'/#college'}>College</a></h4>
                     </div>
                 </div>
 
-                <div id="senior" className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                <div id="senior"  onClick={this.chooseSeniorHigh}  className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
                     <div className="box">
                         <div className="icon" style={{background: '#ecebff'}}><i className="" style={{color: '#8660fe'}}><img src={require("assets/img/senior.png")} alt="" style={{height: '65px', width: '65px'}} /></i></div>
-                        <h4 className="title"><a href={'#senior'}>Senior High</a></h4>
+                        <h4 className="title"><a href={'/#senior'}>Senior High</a></h4>
                         
                     </div>
                 </div>
@@ -130,6 +147,7 @@ export class GradeLevel extends Component{
             </div>
             )
         }
+         
 
     }
 }

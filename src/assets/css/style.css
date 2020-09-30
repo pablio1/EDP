@@ -325,3 +325,42 @@ section {
     transform: translateY(-10px);
   }
 }
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.services .icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.services .icon i {
+  color: #70b9b0;
+  font-size: 42px;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.services .title a {
+  color: #343a40;
+  transition: 0.3s;
+}
+
+.services .icon-box:hover .title a {
+  color: #70b9b0;
+}
+
+.services .description {
+  line-height: 24px;
+  font-size: 14px;
+}
