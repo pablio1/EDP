@@ -5,6 +5,9 @@ import CurrentAddress from './steps/CurrentAddress';
 import PermanentAddress from './steps/PermanentAddress';
 import Contact from './steps/Contact';
 import SeniorHighSetup from './steps/SeniorHighSetup';
+import JuniorHighSetup from './steps/JuniorHighSetup';
+import ElementarySetup from './steps/ElementarySetup';
+
 
 export class GradeLevel extends Component{
 
@@ -36,6 +39,12 @@ export class GradeLevel extends Component{
     chooseSeniorHigh = () => {
         this.setState({gradeLevel: 'senior'});
     };  
+    chooseJuniorHigh = () => {
+        this.setState({gradeLevel: 'junior'});
+    };
+    chooseElementary = () => {
+        this.setState({gradeLevel: 'elementary'});
+    };
 
 
     render(){
@@ -106,7 +115,33 @@ export class GradeLevel extends Component{
             if(this.state.step === 1){
                 return(
                     <>
-                        <SeniorHighSetup/>  
+                        <SeniorHighSetup
+                        
+                        />  
+                    </>
+                )
+            }
+            
+        }
+        else if(this.state.gradeLevel === 'junior'){
+            if(this.state.step === 1){
+                return(
+                    <>
+                        <JuniorHighSetup
+                        
+                        />  
+                    </>
+                )
+            }
+            
+        }
+        else if(this.state.gradeLevel === 'elementary'){
+            if(this.state.step === 1){
+                return(
+                    <>
+                        <ElementarySetup
+                        
+                        />  
                     </>
                 )
             }
@@ -131,17 +166,17 @@ export class GradeLevel extends Component{
                         
                     </div>
                 </div>
-                <div id="junior" className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                <div id="junior" onClick={this.chooseJuniorHigh} className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
                     <div className="box">
                         <div className="icon" style={{background: '#ecebff'}}><i className="" style={{color: '#8660fe'}}><img src={require("assets/img/junior.png")} alt="" style={{height: '65px', width: '65px'}} /></i></div>
-                        <h4 className="title"><a href={'#junior'}>Junior High</a></h4>
+                        <h4 className="title"><a href={'/#junior'}>Junior High</a></h4>
                         
                     </div>
                 </div>
-                <div id="elementary" className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                <div id="elementary" onClick={this.chooseElementary} className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
                     <div className="box">
                         <div className="icon" style={{background: '#ecebff'}}><i className="i\" style={{color: '#8660fe'}}><img src={require("assets/img/elementary.png")} alt="" style={{height: '65px', width: '65px'}} /></i></div>
-                        <h4 className="title"><a href={'#elementary'}>Elementary</a></h4>
+                        <h4 className="title"><a href={'/#elementary'}>Elementary</a></h4>
                     </div>
                 </div>
             </div>
