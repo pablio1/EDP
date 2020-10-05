@@ -35,7 +35,7 @@ export class ElementarySetup extends Component {
                         <label>LRN Number</label>
                             <input type="text" className="form-control" id="LRNnumber" required />
                         </div>
-                        
+                            
                     </div>
                     <div className="row">
                     <div className="col-md-3 mb-3">
