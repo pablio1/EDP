@@ -332,7 +332,7 @@ export class SeniorHighSetup extends Component {
                         
                         </div>
                         <div className="col-md-3 mb-3">
-                        <div class="custom-file">
+                        <div className="custom-file">
                             <input type="file" class="custom-file-input" id="customFile" name="myImage"/>
                             <label class="custom-file-label" for="customFile">Choose file</label>
                         </div>

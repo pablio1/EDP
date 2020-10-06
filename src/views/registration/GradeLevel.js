@@ -37,7 +37,9 @@ export class GradeLevel extends Component{
     render(){
         if (this.state.gradeLevel === 'college') {
             return(
-                <></>
+                <>
+                    <CollegeSetup/>               
+                     </>
             )
         }
        else if(this.state.gradeLevel === 'senior'){
