@@ -12,7 +12,9 @@ export class Assessment extends Component {
     render(){
         if(this.state.viewDetails){
             return (
-                <></>
+                <>
+                    <img src={require('assets/img/maintenance.png')} className="img-fluid"/>
+                </>
             )
             
         }else{
