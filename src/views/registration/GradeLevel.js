@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
 import CollegeSetup from './steps/CollegeSetup';
-import LastSchool from './steps/LastSchool';
-import CurrentAddress from './steps/CurrentAddress';
-import PermanentAddress from './steps/PermanentAddress';
-import Contact from './steps/Contact';
 import SeniorHighSetup from './steps/SeniorHighSetup';
 import JuniorHighSetup from './steps/JuniorHighSetup';
 import ElementarySetup from './steps/ElementarySetup';
@@ -16,16 +12,7 @@ export class GradeLevel extends Component{
         step: 1,
     };
 
-    nextStep = () => {
-        const { step } = this.state;
-        this.setState({ step: step + 1 });
-    };
-
-    prevStep = () => {
-        const { step } = this.state;
-        this.setState({ step: step - 1 });
-    };
-
+   
     inputChange = input => e => {
         this.setState({
             [input]: e.target.value
@@ -48,106 +35,32 @@ export class GradeLevel extends Component{
 
 
     render(){
-        
-
         if (this.state.gradeLevel === 'college') {
-            if(this.state.step === 1){
-                return(
-                    <>
-                        <CollegeSetup 
-                            nextStep={this.nextStep}
-                            inputChange={this.inputChange}
-                            //values={values}
-                        />
-                    </>
-                )
-            }
-            else if(this.state.step === 2){
-                return(
-                    <>
-                        <LastSchool 
-                            nextStep={this.nextStep}
-                            prevStep={this.prevStep}
-                            inputChange={this.inputChange}
-                            //values={values}
-                        />
-                    </>
-                )
-            }
-            else if(this.state.step === 3){
-                return(
-                    <>
-                        <CurrentAddress 
-                            nextStep={this.nextStep}
-                            prevStep={this.prevStep}
-                            inputChange={this.inputChange}
-                            //values={values}
-                        />
-                    </>
-                )
-            }
-            else if(this.state.step === 4){
-                return(
-                    <>
-                        <PermanentAddress 
-                            nextStep={this.nextStep}
-                            prevStep={this.prevStep}
-                            inputChange={this.inputChange}
-                            //values={values}
-                        />
-                    </>
-                )
-            }
-            else if(this.state.step === 5){
-                return(
-                    <>
-                        <Contact 
-                            nextStep={this.nextStep}
-                            prevStep={this.prevStep}
-                            inputChange={this.inputChange}
-                            //values={values}
-                        />
-                    </>
-                )
-            }
+            return(
+                <></>
+            )
         }
        else if(this.state.gradeLevel === 'senior'){
-            if(this.state.step === 1){
-                return(
-                    <>
-                        <SeniorHighSetup
-                        
-                        />  
-                    </>
-                )
-            }
-            
+            return(
+                <>
+                    <SeniorHighSetup />
+                </>
+            )
         }
         else if(this.state.gradeLevel === 'junior'){
-            if(this.state.step === 1){
-                return(
-                    <>
-                        <JuniorHighSetup
-                        
-                        />  
-                    </>
-                )
-            }
-            
+            return(
+                <>
+                    <JuniorHighSetup />
+                </>
+            )
         }
         else if(this.state.gradeLevel === 'elementary'){
-            if(this.state.step === 1){
-                return(
-                    <>
-                        <ElementarySetup
-                        
-                        />  
-                    </>
-                )
-            }
-            
+            return(
+                <>
+                    <ElementarySetup />
+                </>
+            )
         }
-        
         
         else {
             return(

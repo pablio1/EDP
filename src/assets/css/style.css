@@ -364,3 +364,74 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
+
+
+/* start here */
+
+
+.overlay {
+  z-index: -1;
+  display: false;
+  position: fixed;
+  margin: false;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  opacity: 0;
+}
+.overlay.active {
+  z-index: 100;
+  opacity: 1;
+}
+.overlay.active .overlay-image {
+  opacity: 1;
+}
+.overlay-card {
+  height: 75vh;
+  min-height: 400px;
+  width: calc(92% - 40px);
+  max-width: 1086px;
+  padding-left: 30px;
+  background-color: #f4f4f4;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.overlay-image {
+  height: 100%;
+  width: 480px;
+  opacity: 0;
+  -webkit-transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), opacity 0.2s 0.3s ease;
+  transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), opacity 0.2s 0.3s ease;
+}
+.overlay-desc {
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  line-height: 20px;
+  height: calc(100% - 40px);
+  margin: 20px;
+  border-left: 1px solid #ccc;
+  width: calc(100% - 520px);
+  padding: 20px 20px 20px 40px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.overlay-desc::-webkit-scrollbar {
+  width: 6px;
+}
+.overlay-desc::-webkit-scrollbar-thumb {
+  background-color: #999;
+}
+.post-image {
+  height: 100%;
+  max-height: 400px;
+  width: 480px;
+  border: 20px solid #fff;
+  box-shadow: 0 4px 8px -2px rgba(0,0,0,0.25);
+  background-size: cover !important;
+  cursor: pointer;
+}
