@@ -23,8 +23,10 @@ export class Assessment extends Component {
                 <>
                     <table className="table table-striped" style={{height: '315px'}}>
                         <thead>
-                            <th>Amount due for:</th>
-                            <th>Amount</th>
+                            <tr>
+                                <th>Amount due for:</th>
+                                <th>Amount</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>

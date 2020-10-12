@@ -10,16 +10,16 @@ export class Dashboard extends Component {
             <StudentNavbar />
 
             <main id="main">
-                <section id="breadcrumbs" class="breadcrumbs">
-                    <div class="container">
+                <section id="breadcrumbs" className="breadcrumbs">
+                    <div className="container">
                         <ol>
                         <li><a href="index.html">Home</a></li>
                         </ol>
                         <h2>Online Student Portal</h2>
                     </div>
                 </section>
-                <section id="portfolio-details" class="portfolio-details">
-                    <div class="container" data-aos="fade-up">
+                <section id="portfolio-details" className="portfolio-details">
+                    <div className="container" data-aos="fade-up">
                         <div className="row justify-content-center">
                             <div className="col-md-4">
                                 <div className="card-header">
