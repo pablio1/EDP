@@ -2,9 +2,18 @@ import React,{Component} from 'react';
 import StudentNavbar from 'components/StudentNavbar';
 import 'assets/css/style.css';
 import Assessment from 'components/Assessment';
+import Footer from 'components/Footer';
 
 export class Dashboard extends Component {
+
+
+    
+
+
+
     render(){
+
+        
         return (
             <>
             <StudentNavbar />
@@ -29,7 +38,7 @@ export class Dashboard extends Component {
                                     <div className="card-body">
                                         <div className="row">
                                             <div className="col-md-12 text-center">
-                                                <img src={require('assets/img/ID.png')} height="150" width="120" alt="" />
+                                                <img src={require('assets/img/Pic1.jpg')} height="150" width="120" alt="" />
                                             </div>
                                         </div>
                                         <div className="row mt-3">
@@ -66,7 +75,7 @@ export class Dashboard extends Component {
                                         <div className="row">
                                             <div className="col-md-12 text-center">
                                                 <label>pub.sumalinog@gmail.com</label>
-                                                <label className="badge badge-success">verified</label>
+                                                <label className="badge badge-success">Verified</label>
                                             </div>
                                         </div>
                                     </div>
@@ -88,6 +97,7 @@ export class Dashboard extends Component {
                     </div>
                 </section>
             </main>
+            <Footer/>
         </>
         )
     }

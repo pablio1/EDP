@@ -1,6 +1,8 @@
 import React from 'react';
 
 function StudentNavbar(){
+    
+
     return(
         <>
         <div id="topbar" className="d-none d-lg-flex align-items-end fixed-top ">
@@ -24,9 +26,9 @@ function StudentNavbar(){
                             <li><a href={'/#'}>Account Settings</a></li>
                             <li className="drop-down"><a href={'/#'}>Survey</a>
                                 <ul>
-                                <li><a href={'/#'}>Teachers Evaluation</a></li>
-                                <li><a href={'/#'}>Student Satisfaction Survey</a></li>
-                                <li><a href={'/#'}>Open Distance Learning Survey</a></li>
+                                <li><a href="/#" >Teachers Evaluation</a></li>
+                                <li><a href="/#">Student Satisfaction Survey</a></li>
+                                <li><a href="/#">Open Distance Learning Survey</a></li>
                                 </ul>
                             </li>
                             <li><a href={'/#'}>Online Enrollment</a></li>
@@ -34,7 +36,8 @@ function StudentNavbar(){
                     </li>
                     <li className="drop-down mr-1"><a href={'/#'} style={{display: 'flex'}}><label className="d-md-none d-lg-none d-xl-none d-sm-block mr-2">Notifications</label><i className="fa fa-bell text-danger">10</i></a>
                         <ul>
-                            <li><a href={'/#'}>Your enrollment has been approved.</a></li>
+                            <li><a href="/#">Your enrollment has been approved.</a></li>
+                            <li><a href="/#">View all notifications</a></li>
                         </ul>
                     </li>
                     <li className=""><a href={'/#'}>Publio S. Sumalinog Jr.</a></li>
