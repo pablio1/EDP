@@ -1,38 +1,35 @@
 import React, { Component } from 'react'
 
-export class CollegeSetup extends Component {
-    continue = e => {
-        e.preventDefault();
-        this.props.nextStep();
-    };
+export class JuniorHighSetup extends Component {
+    
 
     render() {
-        const { values, inputChange } = this.props;
-
         return (
             <>
-                
                 <div className="container-lg">
-                <h3 className="text-left">New Registration For College
+                    <h3 className="text-left">New Registration For Junior High
                         <br /><br />
-                        <small>1st Semester S.Y. 2020-2021</small>
+                        <small>School Year 2020-2021</small>
                     </h3>
                     <div class="row">                   
-                    <div class="col-md-6 mb-3">
-                    <label className="ml-1 text-danger" for="firstName">(Note: You can still change course when you enroll)</label>
+                        <div class="col-md-3 mb-3">
+                        <label>Grade Level</label>
                             <select className="form-control">
-                                <option>Course</option>
-                                <option>test</option>
-                                <option>test</option>
-                            </select>
-                        
-                            
+                                <option>Grade 7</option>
+                                <option>Grade 8</option>
+                                <option>Grade 9</option>
+                                <option>Grade 10</option>
+                                
+                            </select> 
                         </div>
                         <div class="col-md-3 mb-3">
                         <label>LRN Number</label>
                             <input type="text" className="form-control" id="LRNnumber" required />
                         </div>
-                            
+                        <div class="col-md-3 mb-3">
+                        <label>ESC ID for grantee (Grade 8-10)</label>
+                            <input type="text" className="form-control" id="ESCschoolID"  required />
+                        </div>
                     </div>
                     <div className="row">
                     <div className="col-md-3 mb-3">
@@ -353,4 +350,4 @@ export class CollegeSetup extends Component {
     }
 }
 
-export default CollegeSetup
+export default JuniorHighSetup

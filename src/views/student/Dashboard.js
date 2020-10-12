@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import Topbar from 'components/Topbar';
 import StudentNavbar from 'components/StudentNavbar';
 import 'assets/css/style.css';
 import Assessment from 'components/Assessment';
@@ -24,7 +23,7 @@ export class Dashboard extends Component {
                         <div className="row justify-content-center">
                             <div className="col-md-4">
                                 <div className="card-header">
-                                    <h4 className="card-title">Student Information</h4>
+                                    <label className="card-title">Student Information</label>
                                 </div>
                                 <div className="card">
                                     <div className="card-body">
@@ -75,7 +74,7 @@ export class Dashboard extends Component {
                             </div>
                             <div className="col-md-7">
                                 <div className="card-header">
-                                    <h4 className="card-title">Assessment Information</h4>
+                                    <label className="card-title">Assessment Information</label>
                                 </div>
                                 <div className="card">
                                     <div className="card-body">

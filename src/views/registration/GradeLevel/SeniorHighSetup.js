@@ -1,41 +1,61 @@
 import React, { Component } from 'react'
 
-export class ElementarySetup extends Component {
-    continue = e => {
-        e.preventDefault();
-        this.props.nextStep();
-    };
+export class SeniorHighSetup extends Component {
+    
 
     render() {
-        const { values, inputChange } = this.props;
 
         return (
             <>
                 <div className="container-lg">
-                    <h3 className="text-left">New Registration For Pre School And Elementary
+                    <h3 className="text-left">New Registration For Senior High
                         <br /><br />
-                        <small>School Year 2020-2021</small>
+                        <small>1st Semester S.Y. 2020-2021</small>
                     </h3>
-                    <div class="row">                   
-                        <div class="col-md-3 mb-3">
-                        <label>Grade Level</label>
+                    <div className="row">  
+                                     
+                        <div className="col-md-6 mb-3">
+                        <label>Strand to enroll</label>
                             <select className="form-control">
-                                <option>Nursery</option>
-                                <option>Kinder</option>
-                                <option>Grade 1</option>
-                                <option>Grade 2</option>
-                                <option>Grade 3</option>
-                                <option>Grade 4</option>
-                                <option>Grade 5</option>
-                                <option>Grade 6</option>
-                                
-                            </select> 
+                                <option>ACADEMICS - ABM</option>
+                                <option>test</option>
+                                <option>test</option>
+                            </select>
                         </div>
-                        <div class="col-md-3 mb-3">
+                        <div className="col-md-3 mb-3">
+                        <label>Year Level</label>
+                            <select className="form-control">
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row">
+                    <div className="col-md-3 mb-3">
+                        <label>Session</label>
+                            <select className="form-control">
+                                
+                                <option>Morning</option>
+                                <option>Afternoon</option>
+                            </select>
+                        
+                            
+                        </div>
+                    </div>
+                    <div className="row">
+                    
+                        <div className="col-md-3 mb-3">
                         <label>LRN Number</label>
                             <input type="text" className="form-control" id="LRNnumber" required />
                         </div>
-                            
+                        <div className="col-md-3 mb-3">
+                        <label>ESC School ID</label>
+                            <input type="text" className="form-control" id="ESCschoolID"  required />
+                        </div>
+                        <div className="col-md-3 mb-3">
+                        <label>ESC Student ID</label>
+                            <input type="text" className="form-control" id="ESCstudentID" required />
+                        </div>
                     </div>
                     <div className="row">
                     <div className="col-md-3 mb-3">
@@ -83,6 +103,13 @@ export class ElementarySetup extends Component {
                         
                         
                     </div>
+                    <div className="row">
+                    <div className="col-md-6 mb-3">
+                    <label>Birth Place</label>
+                    <input type="text" className="form-control" id="Citizenship" required />
+                        </div>
+                       
+                        </div>
                     <div className="row">
                     <div className="col-md-8 mb-3">
                     <h4>Last School Attended (N/A If Not Applicable)</h4>
@@ -295,7 +322,7 @@ export class ElementarySetup extends Component {
                         
                         </div>
                         <div className="col-md-3 mb-3">
-                        <div class="custom-file">
+                        <div className="custom-file">
                             <input type="file" class="custom-file-input" id="customFile" name="myImage"/>
                             <label class="custom-file-label" for="customFile">Choose file</label>
                         </div>
@@ -342,18 +369,18 @@ export class ElementarySetup extends Component {
                         </div>
                         
                         </div>
-                    
-                   
-                   
+
                 </div>
+                
                 <div className="row justify-content-center mt-3">
                     <div className="col-3 text-right">
-                        <button className="btn btn-lg btn-primary btn-block text-uppercase" onClick={this.continue}>Continue</button>
+                        <button className="btn btn-lg btn-primary btn-block " onClick={this.continue}>Submit Form</button>
                     </div>
                 </div>
+                
             </>
         )
     }
 }
 
-export default ElementarySetup
+export default SeniorHighSetup

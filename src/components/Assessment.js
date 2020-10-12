@@ -13,7 +13,7 @@ export class Assessment extends Component {
         if(this.state.viewDetails){
             return (
                 <>
-                    <img src={require('assets/img/maintenance.png')} className="img-fluid"/>
+                    <img src={require('assets/img/maintenance.png')} alt="maintenance" className="img-fluid"/>
                 </>
             )
             

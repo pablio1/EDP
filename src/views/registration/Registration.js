@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import CollegeSetup from './steps/CollegeSetup';
-import SeniorHighSetup from './steps/SeniorHighSetup';
-import JuniorHighSetup from './steps/JuniorHighSetup';
-import ElementarySetup from './steps/ElementarySetup';
+import CollegeSetup from './GradeLevel/CollegeSetup';
+import SeniorHighSetup from './GradeLevel/SeniorHighSetup';
+import JuniorHighSetup from './GradeLevel/JuniorHighSetup';
+import ElementarySetup from './GradeLevel/ElementarySetup';
 
 
-export class GradeLevel extends Component{
+export class Registration extends Component{
 
     state = {
         gradeLevel: '',
@@ -101,4 +101,4 @@ export class GradeLevel extends Component{
 
     }
 }
-export default GradeLevel;
+export default Registration;

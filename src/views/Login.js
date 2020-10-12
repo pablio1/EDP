@@ -3,13 +3,11 @@ import Topbar from '../components/Topbar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../assets/css/style.css';
-import GradeLevel from './registration/GradeLevel';
+import GradeLevel from './registration/Registration';
+//import OnlineEnrollment from './student/OnlineEnrollment';
 
 
 export class Login extends Component{
-
-    
-
     render(){
         return(
             <>
@@ -44,7 +42,7 @@ export class Login extends Component{
                             </div>
 
                             <div className="col-md-6 intro-img order-md-last order-first" data-aos="zoom-in" data-aos-delay="200">
-                                <img src="assets/img/intro-img.png" alt="elementary" className="img-fluid" className="img-fluid animated"/>
+                                <img src="assets/img/intro-img.png" alt="elementary" className="img-fluid animated"/>
                             </div>
                         </div>
 
