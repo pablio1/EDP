@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b3976f4a.chunk.css",
+    "main.js": "/static/js/main.fb1566bf.chunk.js",
+    "main.js.map": "/static/js/main.fb1566bf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cf9e4769.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cf9e4769.js.map",
+    "static/js/2.d157e027.chunk.js": "/static/js/2.d157e027.chunk.js",
+    "static/js/2.d157e027.chunk.js.map": "/static/js/2.d157e027.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f33f165d781abe6638755ec6a95731f9.js": "/precache-manifest.f33f165d781abe6638755ec6a95731f9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b3976f4a.chunk.css.map": "/static/css/main.b3976f4a.chunk.css.map",
+    "static/js/2.d157e027.chunk.js.LICENSE.txt": "/static/js/2.d157e027.chunk.js.LICENSE.txt",
+    "static/media/Pic1.jpg": "/static/media/Pic1.c2466485.jpg",
+    "static/media/college.png": "/static/media/college.f123c561.png",
+    "static/media/elementary.png": "/static/media/elementary.73190ccd.png",
+    "static/media/junior.png": "/static/media/junior.942f7eb1.png",
+    "static/media/maintenance.png": "/static/media/maintenance.7141ec8f.png",
+    "static/media/senior.png": "/static/media/senior.6973c5a2.png",
+    "static/media/uc.png": "/static/media/uc.81b5ba1b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf9e4769.js",
+    "static/js/2.d157e027.chunk.js",
+    "static/css/main.b3976f4a.chunk.css",
+    "static/js/main.fb1566bf.chunk.js"
+  ]
+}

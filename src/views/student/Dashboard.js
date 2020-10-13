@@ -3,7 +3,7 @@ import StudentNavbar from 'components/StudentNavbar';
 import 'assets/css/style.css';
 import Assessment from 'components/Assessment';
 import Footer from 'components/Footer';
-
+import 'assets/css/dropbox.css';
 export class Dashboard extends Component {
 
 
@@ -94,6 +94,38 @@ export class Dashboard extends Component {
                                 </div>
                             </div>
                         </div>
+
+
+                        <div className="mt-4 row justify-content-center">
+                                <div className="col-md-11">
+                                    <div className="card">
+                                    <div className="card-body">
+                                        <div className="form-group">
+                                            <div className="preview-zone hidden">
+                                            <div className="box-body"></div>
+                                            </div>
+                                            <div className="dropzone-wrapper">
+                                                <div className="dropzone-desc">
+                                                    <i className="glyphicon glyph
+                                                    icon-download-alt"></i>
+                                                    <p>Choose an image file or drag it here.</p>
+                                                </div>
+                                                <input type="file" name="img_logo" className="dropzone"/>
+                                            </div>
+                                        </div>
+                                        
+                                        <div className="row">
+                                        <div className="col-md-12">
+                                        <button type="submit" className="btn btn-primary pull-right">Upload</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </section>
             </main>
