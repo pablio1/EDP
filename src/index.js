@@ -6,6 +6,9 @@ import Dashboard from './views/student/Dashboard';
 import TeacherEvaluation from './views/student/TeacherEvaluation';
 import OnlineEnrollment from './views/student/enrollment/OnlineEnrollment';
 import UploadGrade from './views/faculty/UploadGrades'
+import StudentGrades from './views/student/StudentGrades'
+import Faculty from './views/faculty/TeacherPage'
+import ClassList from './views/faculty/ClassList'
 
 ReactDOM.render(
   
@@ -31,6 +34,18 @@ ReactDOM.render(
       <Route
         component={UploadGrade}
         exact path="/secured/Faculty/UploadGrade"
+      />
+      <Route
+        component={StudentGrades}
+        exact path="/secured/Student/StudentGrades"
+      />
+      <Route
+        component={Faculty}
+        exact path="/secured/Faculty"
+      />
+      <Route
+        component={ClassList}
+        exact path="/secured/Faculty/ClassList"
       />
     </Switch>
   </BrowserRouter>,

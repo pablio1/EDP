@@ -35,17 +35,6 @@ export default class componentName extends Component {
                                         <option>test2</option>
                                         <option>test3</option>
                                         <option>test4</option>
-                                        <option>test5</option>
-                                        <option>test1</option>
-                                        <option>test2</option>
-                                        <option>test3</option>
-                                        <option>test4</option>
-                                        <option>test5</option>
-                                        <option>test1</option>
-                                        <option>test2</option>
-                                        <option>test3</option>
-                                        <option>test4</option>
-                                        <option>test5</option>
                                     </select>
                                 </div>
                                 <div className="col-4">
