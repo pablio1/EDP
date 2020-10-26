@@ -4,15 +4,7 @@ import 'assets/css/style.css';
 import Footer from 'components/Footer';
 
 export class TeacherEvaluation extends Component {
-
-
-    
-
-
-
-    render(){
-
-        
+    render(){  
         return (
             <>
             <StudentNavbar />

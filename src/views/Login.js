@@ -30,11 +30,11 @@ export class Login extends Component{
                                     <hr></hr>
                                     </div>
                                     <div className="form-label-group">
-                                        <input type="email" placeholder="Username" alt=""  style={{paddingLeft: '20px'}} className="form-control input-padding"  required autoFocus />
+                                        <input type="email" placeholder="Username" alt=""  style={{paddingLeft: '20px'}} className="form-control input-padding" autoFocus />
                                     </div>
 
                                     <div className="form-label-group">
-                                        <input type="password" placeholder="Password" alt="" style={{paddingLeft: '20px'}} className="form-control"  required />
+                                        <input type="password" placeholder="Password" alt="" style={{paddingLeft: '20px'}} className="form-control" />
                                     </div>
 
                                     <div className="custom-control custom-checkbox mb-3">

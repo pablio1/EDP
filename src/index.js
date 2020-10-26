@@ -4,7 +4,8 @@ import {BrowserRouter,Route, Switch} from 'react-router-dom';
 import Login from './views/Login';
 import Dashboard from './views/student/Dashboard';
 import TeacherEvaluation from './views/student/TeacherEvaluation';
-import OnlineEnrollment from './views/student/OnlineEnrollment';
+import OnlineEnrollment from './views/student/enrollment/OnlineEnrollment';
+import UploadGrade from './views/faculty/UploadGrades'
 
 ReactDOM.render(
   
@@ -25,6 +26,11 @@ ReactDOM.render(
       <Route 
         component={OnlineEnrollment}
         exact path="/secured/Student/OnlineEnrollment"
+        
+      />
+      <Route
+        component={UploadGrade}
+        exact path="/secured/Faculty/UploadGrade"
       />
     </Switch>
   </BrowserRouter>,

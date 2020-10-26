@@ -9,11 +9,17 @@
     "@testing-library/user-event": "^7.2.1",
     "i": "^0.3.6",
     "react": "^16.13.1",
+    "react-data-table-component": "^6.11.5",
     "react-dom": "^16.13.1",
+    "react-dropzone": "^11.2.0",
+    "react-file-reader": "^1.1.4",
     "react-hooks-helper": "^1.6.0",
+    "react-papaparse": "^3.9.0",
     "react-router-dom": "^5.2.0",
     "react-script-tag": "^1.1.2",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "styled-components": "^5.2.0",
+    "xlsx": "^0.16.8"
   },
   "scripts": {
     "start": "react-scripts start",

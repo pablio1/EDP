@@ -1,59 +1,70 @@
 import React, { Component } from 'react'
 
 export class Assessment extends Component {
-    state = {
-        viewDetails: false
-    };
-
-    viewDetails = () => {
-        this.setState({viewDetails: true});
-    };
-
+    
     render(){
-        if(this.state.viewDetails){
-            return (
-                <>
-                    <img src={require('assets/img/maintenance.png')} alt="maintenance" className="img-fluid"/>
-                </>
-            )
-            
-        }else{
-
-            return (
-                <>
-                    <table className="table table-striped" style={{height: '315px'}}>
-                        <thead>
-                            <tr>
-                                <th>Amount due for:</th>
-                                <th>Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Prelim</td>
-                                <th>Php 0.00</th>
-                            </tr>
-                            <tr>
-                                <td>Midterm</td>
-                                <th>-------------</th>
-                            </tr>
-                            <tr>
-                                <td>Semi-Final</td>
-                                <th>-------------</th>
-                            </tr>
-                            <tr>
-                                <td>Final</td>
-                                <th>-------------</th>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div className="text-center">
-                        <button className="btn btn-primary" onClick={this.viewDetails}>View Details</button>
+        return (
+            <>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <label>PRELIM</label>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div className="alert alert-info">
+                                    <ul>
+                                        <li>No data.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                </>
-            )
-        }
+                    <div class="card">
+                        <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <label>Midterm</label>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div className="alert alert-info">
+                                    <ul>
+                                        <li>No data.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <label>Semi-Final</label>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div className="alert alert-info">
+                                    <ul>
+                                        <li>No data.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            <label>Final</label>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div className="alert alert-info">
+                                    <ul>
+                                        <li>No data.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </>
+        )
     }
 }
 

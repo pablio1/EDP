@@ -1,17 +1,90 @@
 import React, {Component} from 'react';
-import CollegeSetup from './GradeLevel/CollegeSetup';
-import SeniorHighSetup from './GradeLevel/SeniorHighSetup';
-import JuniorHighSetup from './GradeLevel/JuniorHighSetup';
-import ElementarySetup from './GradeLevel/ElementarySetup';
-
+import CollegeInfo from './steps/CollegeInfo';
+import ContactDetails from './steps/ContactDetails';
+import SchoolDetails from './steps/SchoolDetails';
+import Attachments from './steps/Attachments';
+import SeniorHighInfo from './steps/SeniorHighInfo';
+import JuniorHighInfo from './steps/JuniorHighInfo';
+import ElementaryInfo from './steps/ElementaryInfo';
+import Review from './steps/Review';
 
 export class Registration extends Component{
 
     state = {
         gradeLevel: '',
         step: 1,
+        //College - Personal Information
+        course: '',
+        firstName: '',
+        middleName: '',
+        lastName: '',
+        suffix: '',
+        gender: '',
+        status: '',
+        citizenship: '',
+        birthDate: '',
+
+        motherLastName: '',
+        motherFirstName: '',
+        motherOccupation: '',
+        motherContactNumber: '',
+
+        fatherLastName: '',
+        fatherFirstName: '',
+        fatherOccupation: '',
+        fatherContactNumber: '',
+
+        guardianLastName: '',
+        guardianFirstName: '',
+        guardianOccupation: '',
+        guardianContactNumber: '',
+
+        preferredISP: '',
+        rateInternetSpeed: '',
+
+        //Contact Details
+        houseNumber: '',
+        street: '',
+        barangay: '',
+        city: '',
+        province: '',
+        zipCode: '',
+        homeNumber: '',
+        mobileNumber: '',
+        emailAddress: '',
+        facebookAccount: '',
+
+        //SchoolDetails
+        lastStrand: '',
+        type: '',
+        school: '',
+        schoolAddress: '',
+        lastYearAttended: '',
+        honorsReceived: '',
+        //certificate
+        attachment: [],
+        //SeniorHigh
+        strandToEnroll: '',
+        yearLevel: '',
+        session: '',
+        lrn_Number: '',
+        esc_SchoolID: '',
+        esc_StudentID: '',
+        birthPlace: ''
     };
 
+    clickTest = () => {
+        console.log(this.state)
+    }
+    nextStep = () => {
+        const { step } = this.state;
+        this.setState({ step: step + 1 });
+    };
+
+    prevStep = () => {
+        const { step } = this.state;
+        this.setState({ step: step - 1 });
+    };
    
     inputChange = input => e => {
         this.setState({
@@ -19,6 +92,7 @@ export class Registration extends Component{
         });
 
     };
+
 
     chooseCollege = () => {
         this.setState({gradeLevel: 'college'});
@@ -33,35 +107,287 @@ export class Registration extends Component{
         this.setState({gradeLevel: 'elementary'});
     };
 
-
     render(){
+     
+        const {step,gradeLevel, course, firstName, middleName, lastName, suffix, gender, status, citizenship,birthDate, 
+                motherLastName, motherFirstName, motherOccupation, motherContactNumber, fatherLastName, fatherOccupation, fatherContactNumber,
+                guardianLastName,guardianFirstName,guardianOccupation,guardianContactNumber,preferredISP,rateInternetSpeed, houseNumber,
+                street,barangay,city,province,zipCode,homeNumber,mobileNumber,emailAddress,facebookAccount,lastStrand,type,school,schoolAddress,lastYearAttended,honorsReceived,attachment
+        } = this.state;
+
+        const values = {step,gradeLevel, course, firstName, middleName, lastName, suffix, gender, status, citizenship,birthDate, 
+            motherLastName, motherFirstName, motherOccupation, motherContactNumber, fatherLastName, fatherOccupation, fatherContactNumber,
+            guardianLastName,guardianFirstName,guardianOccupation,guardianContactNumber,preferredISP,rateInternetSpeed, houseNumber,
+            street,barangay,city,province,zipCode,homeNumber,mobileNumber,emailAddress,facebookAccount,lastStrand,type,school,schoolAddress,lastYearAttended,honorsReceived, attachment
+        };
+        
         if (this.state.gradeLevel === 'college') {
-            return(
-                <>
-                    <CollegeSetup/>               
-                     </>
-            )
+            if(this.state.step === 1){
+                return(
+                    <>
+                        <CollegeInfo
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-primary" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 2){
+                return(
+                    <>
+                        <ContactDetails 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-primary ml-5" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 3){
+                return(
+                    <>
+                        <SchoolDetails 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-primary ml-5" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 4){
+                return(
+                    <>
+                        <Attachments 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav mt-5">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-info ml-5" href={'#services'} onClick={this.nextStep}>Review</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 5){
+                return(
+                    <>
+                        <Review 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                    </>
+                )
+            }
         }
        else if(this.state.gradeLevel === 'senior'){
-            return(
-                <>
-                    <SeniorHighSetup />
-                </>
-            )
+            if(this.state.step === 1){
+                return(
+                    <>
+                        <SeniorHighInfo
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-primary" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 2){
+                return(
+                    <>
+                        <ContactDetails 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-primary ml-5" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 3){
+                return(
+                    <>
+                        <SchoolDetails 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-primary ml-5" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 4){
+                return(
+                    <>
+                        <Attachments 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav mt-5">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-info ml-5" href={'#services'} onClick={this.nextStep}>Review</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 5){
+                return(
+                    <>
+                        <Review 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                    </>
+                )
+            }
         }
         else if(this.state.gradeLevel === 'junior'){
-            return(
-                <>
-                    <JuniorHighSetup />
-                </>
-            )
+            if(this.state.step === 1){
+                return(
+                    <>
+                        <JuniorHighInfo
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-primary" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 2){
+                return(
+                    <>
+                        <ContactDetails 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-primary ml-5" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 3){
+                return(
+                    <>
+                        <SchoolDetails 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-primary ml-5" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 4){
+                return(
+                    <>
+                        <Attachments 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav mt-5">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-info ml-5" href={'#services'} onClick={this.nextStep}>Review</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 5){
+                return(
+                    <>
+                        <Review 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                    </>
+                )
+            }
         }
         else if(this.state.gradeLevel === 'elementary'){
-            return(
-                <>
-                    <ElementarySetup />
-                </>
-            )
+            if(this.state.step === 1){
+                return(
+                    <>
+                        <ElementaryInfo
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-primary" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 2){
+                return(
+                    <>
+                        <ContactDetails 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-primary ml-5" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 3){
+                return(
+                    <>
+                        <SchoolDetails 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-primary ml-5" href={'#services'} onClick={this.nextStep}>Continue</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 4){
+                return(
+                    <>
+                        <Attachments 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                        <div className="step-nav mt-5">
+                            <a className="btn btn-secondary" href={'#services'} onClick={this.prevStep}>Previous</a> 
+                            <a className="btn btn-info ml-5" href={'#services'} onClick={this.nextStep}>Review</a>   
+                        </div>
+                    </>
+                )
+            }
+            if(this.state.step === 5){
+                return(
+                    <>
+                        <Review 
+                            inputChange={this.inputChange}
+                            values={values}
+                        />
+                    </>
+                )
+            }
         }
         
         else {
@@ -97,8 +423,6 @@ export class Registration extends Component{
             </div>
             )
         }
-         
-
     }
 }
 export default Registration;

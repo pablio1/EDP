@@ -23,6 +23,12 @@ function StudentNavbar(){
                     <li className="active"><a href={'/#'}>Home</a></li>
                     <li className="drop-down mr-5"><a href={'/#'}>Student</a>
                         <ul>
+                            <li className="drop-down"><a href={'/#'}>Student Infomation</a>
+                                <ul>
+                                    <li><a href="/#" >Grades</a></li>
+                                    <li><a href="/#">Study Load</a></li>
+                                </ul>
+                            </li>
                             <li><a href={'/#'}>Account Settings</a></li>
                             <li className="drop-down"><a href={'/#'}>Survey</a>
                                 <ul>
@@ -37,7 +43,8 @@ function StudentNavbar(){
                     <li className="drop-down mr-1"><a href={'/#'} style={{display: 'flex'}}><label className="d-md-none d-lg-none d-xl-none d-sm-block mr-2">Notifications</label><i className="fa fa-bell text-danger">10</i></a>
                         <ul>
                             <li><a href="/#">Your enrollment has been approved.</a></li>
-                            <li><a href="/#">View all notifications</a></li>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center" href={'/#'}>View all notifications.</a>
                         </ul>
                     </li>
                     <li className=""><a href={'/#'}>Publio S. Sumalinog Jr.</a></li>
