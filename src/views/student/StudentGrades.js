@@ -15,24 +15,20 @@ export class StudentGrades extends Component {
                 <section id="breadcrumbs" class="breadcrumbs">
                     <div class="container">
                         <ol>
-                        <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li>Grade Evaluation</li>
                         </ol>
-                        <h2>Online Student Portal</h2>
+                        <h2>Grade Evaluation</h2>
                     </div>
                 </section>
                 <section id="team" className="team">
                     <div class="container">
-                        <div class="section-title">
-                            <h2>Grade Evaluation</h2>
-                        </div>
                         <div id="accordion">
                             <div class="card">
-                                <div class="card-header" id="headingOne">
-                                <h5 class="mb-0" >
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    1st Sem S.Y. 2020-2021 | BSIT - 4 
-                                    </button>
-                                </h5>
+                                <div class="card-header" id="headingOne"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h5 class="mb-0" >
+                                        1st Sem S.Y. 2020-2021 | BSIT - 4 
+                                    </h5>
                                 </div>
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body">
@@ -87,17 +83,15 @@ export class StudentGrades extends Component {
                             </div>
                         </div>
                     <div class="card">
-                        <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            2st Sem S.Y. 2020-2021 | BSIT - 4 
-                            </button>
-                        </h5>
+                        <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h5 class="mb-0">
+                                2st Sem S.Y. 2020-2021 | BSIT - 4 
+                            </h5>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
                         </div>
                     </div>
                     
