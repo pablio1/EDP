@@ -43,8 +43,8 @@ function StudentNavbar(){
                     <li className="drop-down mr-1"><a href={'/#'} style={{display: 'flex'}}><label className="d-md-none d-lg-none d-xl-none d-sm-block mr-2">Notifications</label><i className="fa fa-bell text-danger">10</i></a>
                         <ul>
                             <li><a href="/#">Your enrollment has been approved.</a></li>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-center" href={'/#'}>View all notifications.</a>
+                            <div className="dropdown-divider"></div>
+                            <a className="dropdown-item text-center" href={'/#'}>View all notifications.</a>
                         </ul>
                     </li>
                     <li className=""><a href={'/#'}>Publio S. Sumalinog Jr.</a></li>
