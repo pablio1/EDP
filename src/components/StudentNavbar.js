@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 function StudentNavbar(){
     
@@ -17,27 +18,27 @@ function StudentNavbar(){
         </div>
         <header id="header" className="fixed-top ">
             <div className="container d-flex align-items-center">
-            <a href={'/'} className="logo mr-auto" style={{fontSize: '15px'}}><img src={require("assets/img/uc.png")} height="50" alt="" className="img-fluid" /> University of Cebu</a>
+            <Link to="/secured/Student" className="logo mr-auto" style={{fontSize: '15px'}}><img src={require("assets/img/uc.png")} height="50" alt="" className="img-fluid" /> University of Cebu</Link>
             <nav className="main-nav d-none d-lg-block">
                 <ul>
-                    <li className="active"><a href={'/#'}>Home</a></li>
+                    <li className="active"><Link to="/secured/Student">Home</Link></li>
                     <li className="drop-down mr-5"><a href={'/#'}>Student</a>
                         <ul>
                             <li className="drop-down"><a href={'/#'}>Student Infomation</a>
                                 <ul>
-                                    <li><a href="/#" >Grades</a></li>
-                                    <li><a href="/#">Study Load</a></li>
+                                    <li><Link to="/secured/Student/StudentGrades" >Grades</Link></li>
+                                    <li><Link to="">Study Load</Link></li>
                                 </ul>
                             </li>
-                            <li><a href={'/#'}>Account Settings</a></li>
+                            <li><Link to="">Account Settings</Link></li>
                             <li className="drop-down"><a href={'/#'}>Survey</a>
                                 <ul>
-                                <li><a href="/#" >Teachers Evaluation</a></li>
-                                <li><a href="/#">Student Satisfaction Survey</a></li>
-                                <li><a href="/#">Open Distance Learning Survey</a></li>
+                                <li><Link to="/secured/student/TeacherEvaluation">Teachers Evaluation</Link></li>
+                                <li><Link to="">Student Satisfaction Survey</Link></li>
+                                <li><Link to="">Open Distance Learning Survey</Link></li>
                                 </ul>
                             </li>
-                            <li><a href={'/#'}>Online Enrollment</a></li>
+                            <li><Link to="/secured/Student/OnlineEnrollment">Online Enrollment</Link></li>
                         </ul>
                     </li>
                     <li className="drop-down mr-1"><a href={'/#'} style={{display: 'flex'}}><label className="d-md-none d-lg-none d-xl-none d-sm-block mr-2">Notifications</label><i className="fa fa-bell text-danger">10</i></a>

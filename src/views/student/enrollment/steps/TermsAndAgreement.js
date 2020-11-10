@@ -15,7 +15,7 @@ export default class TermsAndAgreement extends Component {
                         <div class="modal-content">
                             <div className="row bg-light shadow">
                                 <div className="col-3">
-                                    <img src={require('assets/img/uc.png')} className="img-fluid" />
+                                    <img src={require('assets/img/uc.png')} alt="" className="img-fluid" />
                                 </div>
                                 <div className="col-9">
                                     <h1 class="text-primary font-weight-bold mt-2">University of Cebu</h1>

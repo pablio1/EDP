@@ -1,9 +1,7 @@
 import React,{Component} from 'react';
 import StudentNavbar from 'components/StudentNavbar';
 import 'assets/css/style.css';
-import Assessment from 'components/Assessment';
 import Footer from 'components/Footer';
-import Dropzone from 'components/Dropzone';
 
 export class StudyLoad extends Component {
     render(){

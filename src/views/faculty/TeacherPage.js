@@ -108,7 +108,7 @@ export class TeacherPage extends Component {
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr>
-                                                                            <th scope="row"><a href="#"><img src={require("assets/img/excel.png")} width="15"/>112354</a></th>
+                                                                            <th scope="row"><a href={'/#'}><img src={require("assets/img/excel.png")} alt="" width="15"/>112354</a></th>
                                                                             <td>BSIT</td>
                                                                             <td>4OA</td>
                                                                             <td>ITELEC 42</td>
@@ -119,7 +119,7 @@ export class TeacherPage extends Component {
                                                                             <td>29</td>
                                                                         </tr> 
                                                                         <tr>
-                                                                            <th scope="row"><a href="#"><img src={require("assets/img/excel.png")} width="15"/>112354</a></th>
+                                                                            <th scope="row"><a href={'/#'}><img src={require("assets/img/excel.png")} alt="" width="15"/>112354</a></th>
                                                                             <td>BSIT</td>
                                                                             <td>4OA</td>
                                                                             <td>IT-ELEC 1</td>
@@ -130,7 +130,7 @@ export class TeacherPage extends Component {
                                                                             <td>29</td>
                                                                         </tr> 
                                                                         <tr>
-                                                                            <th scope="row"><a href="#"><img src={require("assets/img/excel.png")} width="15"/>112354</a></th>
+                                                                            <th scope="row"><a href={'/#'}><img src={require("assets/img/excel.png")} alt="" width="15"/>112354</a></th>
                                                                             <td>BSIT</td>
                                                                             <td>4OA</td>
                                                                             <td>IT-ELEC 1-L</td>

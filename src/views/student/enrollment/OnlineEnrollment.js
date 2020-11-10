@@ -27,8 +27,7 @@ export class OnlineEnrollment extends Component {
         });
     }
     render(){
-        const {enrollmentStep,isContactUpdated} = this.state;
-        const values = {enrollmentStep, isContactUpdated}
+        const {isContactUpdated} = this.state;
         return (
             <>
             <StudentNavbar />
@@ -66,7 +65,7 @@ export class OnlineEnrollment extends Component {
                             }
                             {
                                 this.state.enrollmentStep === 3 && (isContactUpdated) &&
-                                <Schedule
+                                    <Schedule
                                     nextStep = {this.nextStep}
                                 />
                             }
